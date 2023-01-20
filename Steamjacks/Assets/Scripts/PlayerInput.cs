@@ -12,13 +12,13 @@ public class PlayerInput : NetworkBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Mouse0))
+        //if(Input.GetKeyDown(KeyCode.Mouse0))
                 //Fire
-        else if(Input.GetKey(KeyCode.Mouse0))
+        //else if(Input.GetKey(KeyCode.Mouse0))
                 //Hold
-        else if(Input.GetKeyUp(KeyCode.Mouse0))
+        //else if(Input.GetKeyUp(KeyCode.Mouse0))
                 //Release
-        else
+        //else
                 //Rotate Gun
 
         _movement = Input.GetAxisRaw("Horizontal");
