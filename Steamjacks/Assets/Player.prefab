@@ -144,6 +144,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a629388059c124695d3841183fa86c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  grapplingGun: {fileID: 368757340046421537}
+  m_lineRenderer: {fileID: 3762425467889723588}
+  percision: 40
+  straightenLineSpeed: 5
+  ropeAnimationCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  StartWaveSize: 2
+  ropeProgressionCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  ropeProgressionSpeed: 1
+  isGrappling: 1
 --- !u!1 &1055663659393158378
 GameObject:
   m_ObjectHideFlags: 0
@@ -242,6 +261,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc6a4d8139c9d81478778a667d6ee3e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  grappleRope: {fileID: 2706450344090573254}
+  grappleToAll: 0
+  grappableLayerNumber: 9
+  gunHolder: {fileID: 8451592828022188000}
+  gunPivot: {fileID: 5655199339279169768}
+  firePoint: {fileID: 6954734534862252240}
+  m_springJoint2D: {fileID: 4530450101512219330}
+  m_rigidbody: {fileID: 7530992552386464560}
+  rotateOverTime: 1
+  rotationSpeed: 4
+  hasMaxDistance: 0
+  maxDistnace: 20
+  launchToPoint: 1
+  launchType: 1
+  launchSpeed: 1
+  autoConfigureDistance: 0
+  targetDistance: 3
+  targetFrequncy: 1
+  grapplePoint: {x: 0, y: 0}
+  grappleDistanceVector: {x: 0, y: 0}
 --- !u!1 &4568274245244916988
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,7 +415,7 @@ SpringJoint2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7530992552386464566}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_EnableCollision: 1
   m_ConnectedRigidBody: {fileID: 0}
@@ -415,6 +454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerController: {fileID: 7530992552386464561}
+  _grapplingGun: {fileID: 368757340046421537}
 --- !u!114 &26941543
 MonoBehaviour:
   m_ObjectHideFlags: 0

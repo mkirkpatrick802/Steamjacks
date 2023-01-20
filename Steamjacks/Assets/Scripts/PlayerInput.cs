@@ -12,14 +12,14 @@ public class PlayerInput : NetworkBehaviour
 
     private void Update()
     {
-        //if(Input.GetKeyDown(KeyCode.Mouse0))
-                //Fire
-        //else if(Input.GetKey(KeyCode.Mouse0))
-                //Hold
-        //else if(Input.GetKeyUp(KeyCode.Mouse0))
-                //Release
-        //else
-                //Rotate Gun
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+            _grapplingGun.SetGrapplePoint();
+        else if (Input.GetKey(KeyCode.Mouse0))
+            _grapplingGun.Holding();
+        else if (Input.GetKeyUp(KeyCode.Mouse0))
+            _grapplingGun.Release();
+        else
+            _grapplingGun.StartRotation();
 
         _movement = Input.GetAxisRaw("Horizontal");
     }
